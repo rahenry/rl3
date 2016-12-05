@@ -16,6 +16,8 @@ struct Entity{
   Entity();
 
   TCOD_map_t fov;
+  void init_fov();
+  bool fov_initialised;
   void update_fov();
 };
 

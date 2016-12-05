@@ -15,7 +15,7 @@ struct Map{
 
   Map(int w_, int h_);
 
-  void draw(TCOD_console_t con, Cell *focus);
+  void draw(TCOD_console_t con, Cell *focus, bool use_fov);
   void init_fov();
   void update_fov();
 

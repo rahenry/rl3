@@ -21,7 +21,7 @@ struct Cell{
   TCOD_color_t get_color_bg();
 
   Cell(Floor *floor_base_) : floor_base(floor_base_){};
-  Cell(int x_, int y_): x(x_), y(y_), entity(NULL), map(NULL), floor_base(NULL), floor_current(NULL){};
+  Cell(int x_, int y_, Map *map): x(x_), y(y_), entity(NULL), map(map), floor_base(NULL), floor_current(NULL){};
 };
 
 #endif
